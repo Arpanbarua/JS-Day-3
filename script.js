@@ -111,12 +111,15 @@ let on = document.querySelector('.on');
 let off = document.querySelector('.off');
 let image = document.querySelector('.image') 
 on.addEventListener('click', function(){
-    image.src='	https://www.w3schools.com/js/pic_bulbon.gif';
+    // image.src='	https://www.w3schools.com/js/pic_bulbon.gif';
+    image.src = "https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg";
+    image.style.height= '512px';
+    image.style.width= '512px';
 });
 
 off.addEventListener('click',function()
 {
-    image.src='	https://www.w3schools.com/js/pic_bulboff.gif';
+    image.src='https://pngimg.com/d/bulb_PNG1243.png';
 });
 
 // off.addEventListener('click', ()=>
@@ -127,6 +130,9 @@ off.addEventListener('click',function()
 let gen_clr = document.querySelector(`.generate_clr`);
 let color_box = document.querySelector('.color_box');
 let color = document.querySelector('.color');
+let redtxt = document.querySelector('.color .red1');
+let greentxt = document.querySelector('.color .green1');
+let bluetxt = document.querySelector('.color .blue1');
 
 gen_clr.addEventListener('click',()=>
 {
@@ -134,8 +140,13 @@ gen_clr.addEventListener('click',()=>
     let red = Math.round(Math.random()*255); 
     let green = Math.round(Math.random()*255);
     let blue = Math.round(Math.random()*255);
+    
+    redtxt.textContent = red;
+    greentxt.textContent = green;
+    bluetxt.textContent = blue;
+    // red.style.background = "white";
 
-    color.textContent = `RGB: ( ${red}, ${green}, ${blue} ) `
+    // color.textContent = `RGB: ( ${red}, ${green}, ${blue} ) `
     color_box.style.background = `rgb(${red}, ${green}, ${blue})`;
 
 });

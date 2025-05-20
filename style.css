@@ -51,7 +51,7 @@ button:hover
 .generate_clr
 {
     margin-bottom: 20px;
-    background: palegoldenrod;
+    background: linear-gradient(0.25turn, #488aa6, #ebf8e1, #f69d3c);;
 }
 
 #random_color_gen .contains .color_box 
@@ -61,6 +61,45 @@ button:hover
     background: #fff;
     margin: auto;
    margin-bottom: 20px;
+}
+
+#random_color_gen .color
+{
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 30px ;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#random_color_gen .color .red1 
+{
+    background-color: #fff;
+    color: red;
+    padding: 15px 20px; 
+    border-radius: 10px;
+    outline: 1px solid red;
+
+}
+
+#random_color_gen .color .green1 
+{
+    background-color: #fff;
+    color: green;
+    padding: 15px ;
+    border-radius: 10px;
+    outline: 1px solid green;
+
+}
+
+#random_color_gen .color .blue1 
+{
+    background-color: #fff;
+    color: blue;
+    padding: 15px ;
+    border-radius: 10px;
+    outline: 1px solid blue;
 }
 
 
