@@ -115,11 +115,14 @@ on.addEventListener('click', function(){
     image.src = "https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg";
     image.style.height= '512px';
     image.style.width= '512px';
+    on.style.boxShadow = '3px 3px 10px #000';
 });
 
 off.addEventListener('click',function()
 {
     image.src='https://pngimg.com/d/bulb_PNG1243.png';
+    off.style.boxShadow = '3px 3px 10px #000';
+    on.style.boxShadow= 'none';
 });
 
 // off.addEventListener('click', ()=>
